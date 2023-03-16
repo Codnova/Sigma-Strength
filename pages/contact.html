@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" srel="stylesheet">
+  <link rel="stylesheet" href="../stylesheet/styles.css">
+  <title>Sigma Strength - Contact</title>
+</head>
+<body>
+  <div class="contenedor-encabezado">
+    <header id="encabezado" class="encabezado">
+      <div id="logo" class="logo">
+        <a href="../index.html"><img class="logo" src="../resources/logo.png" alt="Sigma Strength Logo"></a>
+      </div>
+      <nav id="contenedor-barra">
+        <ul id="barra-navegacion" class="navbar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about-us.html">About</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li> <a href="./login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="seccion-principal">
+      <h1>Sigma Strength</h1>
+      <p>Evolve your strength to the next level with the best coaching service</p>
+      <button class="button"><a href="./login.html">Sign up now</a></button>
+    </main>
+  </div>
+  <div class="contenedor-blanco">
+    <section id="contact"> <!-- Sección del formulario de contacto-->
+      <h2>GET IN TOUCH</h2>
+      <div class="contenedor-formulario"> <!-- Contenedor del formulario-->
+        <form method="get" action="" class="formulario">
+          <label for="full-name">Full Name <input id="full-name" name="full-name" type="text" class="input" required></label>
+          <label for="email">Your Email <input id="email" name="email" type="email" class="input" required></label>
+          <label for="what-need"> What do you need?
+            <select name="what-need" id="what-need">
+              <option value="0">Select an option...</option>
+              <option value="1">Strength Training</option>
+              <option value="2">Hypertrophy Training</option>
+              <option value="3">Conditioning</option>
+              <option value="4">Nutrition</option>
+              <option value="5">Other Reason</option>
+            </select>
+          </label>
+          <label for="message">Message <textarea name="message" id="message" cols="60" rows="10"></textarea></label>
+          <input type="reset" class="boton-formulario" id="boton-reset">
+          <input type="submit" value="Submit" class="boton-formulario" id="boton-submit">
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="contenedor-negro"> <!-- Sección donde van los coaches -->
+    <section id="location">
+      <h2>TRAIN WITH US</h2>
+      <div class="contenedor-ubicacion">
+        <article>
+          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0171295140935!2d-73.9739488840915!3d40.76164797932662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258face4cb11b%3A0xa734e5b5aef4c1dc!2s432%20Park%20Ave%2C%20New%20York%2C%20NY%2010022%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1676936962261!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Training with like-minded individuals can help you reach your goals faster. <br><br> Train with us at our gym and further develop your strength. <br><br> 432 Park Ave, New York, NY 10022, EE. UU.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+  <div class="contenedor-footer"> <!-- Sección Footer -->
+    <footer id="footer">
+      <section class="links-footer">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+        <div id="logo-footer">
+          <a href="./index.html"><img class="logo" src="../resources/logo.png" alt="Sigma Strength Logo"></a>
+        </div>
+        <ul>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </section>
+    </footer>
+  </div>
+</body>
+</html>

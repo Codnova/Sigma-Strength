@@ -1,0 +1,53 @@
+.contenedor-encabezado .encabezado {
+   /* Centramos todos los elementos en el encabezado */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contenedor-encabezado .encabezado .logo img{
+  margin: 0 auto; /* Centramos el logo en la mitad de la pantalla */
+  max-height: 195px;
+  max-width: 300px;
+
+}
+
+.navbar {
+  margin-top: 50px; /*Separamos un poco el navbar del logo  */
+  background-color: #EFE9F4;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+
+
+/* Damos estilo a los elementos del menu de navegación*/
+.navbar li{
+  font-size: 2.25rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 10px; /* Le damos separación a los elementos del navbar */
+  
+}
+
+/* Resaltamos el primer item del menu de navegacion*/
+.navbar li:first-of-type{
+  background-color: #171D1C;
+  border-radius: 5px;
+  
+}
+
+.navbar li:first-of-type a{
+  color: #EFE9F4;
+  
+}
+
+/* Damos estilo a los links en el navbar */
+.navbar a {
+  text-decoration: none;
+  color: #171D1C;
+}
+

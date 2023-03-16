@@ -1,0 +1,552 @@
+/*CSS Reset*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 
+Paleta de colores 
+Magnolia white: #EFE9F4
+Eerie black: #171D1C
+Neon blue: #5863F8
+Font family: Inter 400 regular y 700 Bold
+
+*/
+
+/* La pagina esá dividia en contenedores de 3 colores: azul (header y footer), blanco (donde va el contenido principal) y negro. Asi puedo reutilizarlos en todas las paginas. */
+
+/* ------------------------------------- index.html-------------------------------------*/
+
+/* -----Sección Header----- */
+
+.contenedor-encabezado {
+  background: #5863F8;
+  padding: 10px 50px; /* Padding de todo lo que está en el contenedor encabezado*/
+  
+}
+
+.contenedor-encabezado .encabezado .container .navbar .container-fluid {
+  background-color: #5863F8;
+}
+
+.contenedor-encabezado .encabezado .container .logo img{
+   /* Centramos el logo en la mitad de la pantalla */
+  width: 220px;
+  height: 140px;
+  
+}
+
+.nav-link { 
+  color: #EFE9F4 !important;
+  font-size: 2.25rem !important;
+  font-weight: 700 !important; 
+}
+
+
+/* Centramos la seccion main de la pagina (donde está nuestro H1) */
+main {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.contenedor-encabezado main {
+  color: #EFE9F4;
+}
+
+.contenedor-encabezado h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.contenedor-encabezado p {
+  font-size: 2rem;
+  
+}
+
+.contenedor-encabezado .button {
+  font-size: 2rem;
+  background-color: #171D1C;
+  color: #EFE9F4;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+}
+
+.contenedor-encabezado .button a {
+  text-decoration: none;
+  color: #EFE9F4;
+  
+}
+
+.contenedor-encabezado .button a:visited {
+  color: #EFE9F4;
+}
+
+/* -----Sección Contenedor Blanco Ofertas----- */
+
+.contenedor-blanco {
+  background-color: #EFE9F4;
+   
+}
+
+.contenedor-blanco section {
+  padding: 50px;/* Padding de la seccion oferta*/
+}
+
+.contenedor-blanco section h2 { /*Le damos estilo al titulo de la seccion ofertas */
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contenedor-blanco .ofertas { /*Le damos estilo al contenedor ofertas */
+  text-align: center; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 0.5rem;
+  
+}
+
+.contenedor-blanco .ofertas article { /*Le damos estilo a la caja de cada oferta */
+  
+  /*margin: 20px; Modificamos la separacion entre las ofertas */
+  background: #171D1C;
+  text-align: center; /* Centra el texto dentro de la caja */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  min-width: 300px;
+  min-height: 300px;
+  padding: 20px 0 5px 5px;
+  border-radius: 5px;
+  margin: 50px 0 15px 15px;
+  
+}
+
+.contenedor-blanco .ofertas div p {
+  color: #EFE9F4;
+  padding: 1rem;
+  font-size: 1.25rem; /* Tamaño de fuente de los parrafos en las ofertas */ 
+  max-width: 350px;
+}
+
+.contenedor-blanco .ofertas article img { /*Le damos estilo a la caja de cada oferta */
+  height: 80px;
+  width: 80px;
+  margin: 40px auto;  
+}
+
+
+.contenedor-blanco .ofertas article h3{
+  font-size: 2.5rem; /*Modificamos el font size de los titulos de las ofertas */
+  color: #EFE9F4;
+}
+
+.contenedor-blanco .ofertas article img{
+  height: 60px;
+  width: 80px;
+}
+
+/* -----Sección Testimonio----- */
+
+.contenedor-negro {
+  background-color: #171D1C;
+  color: #EFE9F4;
+  text-align: center;
+}
+
+.contenedor-negro section{ 
+  padding: 50px;  
+}
+
+
+.contenedor-negro section h2 { /*Le damos estilo al titulo de la seccion testimonios */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.contenedor-negro .testimonios {
+  margin-top: 50px;
+  font-size: 1.25rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 100px;
+  /* Acá aplicaremos flexbox */
+}
+
+.contenedor-negro .testimonios article{
+  max-width: 300px;
+}
+
+.contenedor-negro .testimonios img { 
+  width: 195px;
+  height: 195px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contenedor-negro .testimonios h4 { /*Le damos estilo al titulo h4 de cada testimonio */
+  text-decoration: underline;
+  
+}
+
+.contenedor-negro .testimonios p { /*Le damos estilo al párrafo de cada testimonio*/
+  margin-top: 10px;
+}
+
+/* -----Sección Footer----- */
+
+.contenedor-footer {
+  background-color: #5863F8;
+  
+}
+
+.contenedor-footer a { /* Le damos estilo a los links en el footer */
+  color: #EFE9F4;
+  text-decoration: none;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.contenedor-footer .links-footer {
+  text-align: center; /* Centramos todo lo que está en el contenedor footer */
+  padding: 50px 0px; /* Le damos separacion a los elementos del footer */
+  /* En esta sección se aplicará flexbox más adelante  */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contenedor-footer .links-footer li{ /* Eliminamos los bullets de la lista*/
+  list-style: none;
+}
+
+#logo-footer img {
+  margin: 0 auto; /* Centramos el logo en la mitad de la pantalla */
+  height: 195px;
+  width: 300px;
+}
+
+
+
+/* ------------------------------------- about-us.html-------------------------------------*/
+
+/* Contenedor blanco del About Us */
+
+.contenedor-blanco .about {
+  margin-top: 50px; /* Separamos el contenido de about us del titulo del contenedor */
+  /* Acá aplicaremos flexbox  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-flow: row wrap;
+}
+
+
+.contenedor-blanco .about img{
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+
+.contenedor-blanco .about .imagen {
+  width: 75vw;
+  max-width: 700px;
+  min-width: 330px;
+}
+
+.contenedor-blanco .about p{
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 700px;
+   /* Movemos el párrafo a la derecha de la imagen */
+  text-align: left;
+  
+  
+}
+
+/* Contenedor negro del About Us */
+
+
+.contenedor-negro .coaches{
+  margin-top: 30px;
+  display: grid;
+  text-align: center; /* Centramos todos los elementos en el contenedor coaches */
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.contenedor-negro .coaches article{ /* Le damos estilo a cada coach */
+  font-size: 2.25rem; 
+  padding: 20px;
+}
+
+
+/* ------------------------------------- pricing.html-------------------------------------*/
+
+
+.contenedor-blanco .productos{
+  text-align: center; /* Centra todo el texto dentro del contenedor*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+}
+
+.contenedor-blanco .productos article{
+  background-color: #171D1C;
+  color: #EFE9F4;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+  width: 380px;
+  height: 474px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+
+.contenedor-blanco .productos h3, .precio{
+  font-size: 2.25rem;
+}
+
+.contenedor-blanco .productos p{
+  font-size: 1.5rem;
+}
+
+
+/* ------------------------------------- contact.html-------------------------------------*/
+
+/* Contenedor blanco del contact */
+
+.contenedor-blanco .contenedor-formulario{ /* Le damos estilo al contenedor del formulario */
+  background-color: #171D1C;
+  color: #EFE9F4;
+  width: 50%;
+  padding: 50px;
+  margin: 30px auto; /* Centramos el contenedor del formulario y lo separamos un poco del H2*/
+  font-size: 2rem; /* Le damos tamaño de fuente a todos los elementos en el form*/
+  border-radius: 5px;
+}
+
+/* .contenedor-blanco .contenedor-formulario .formulario {  Le damos estilo a todos los elementos dentro del formulario 
+  
+} */
+
+.contenedor-blanco .contenedor-formulario label {
+  display: block;
+  margin: 10px 0; /* Le damos espacio entre cada item del formulario */
+  
+}
+
+.contenedor-blanco .contenedor-formulario .input { /* Le damos estilo a los inputs del formulario */
+  background-color: #EFE9F4;
+  color: #171D1C;
+  border-radius: 5px;
+  width: 100%; /* Hacemos que los inputs aparezcan debajo del label al darles todo el ancho de la pantalla */
+  margin: 10px auto; /* Centramos los inputs y le damos un poco de espacio con los labels */
+  height: 3.5rem; /* Agrandamos los inputs al darles altura*/
+  
+}
+
+.contenedor-blanco .contenedor-formulario .formulario textarea{ /* Le damos estilo al textarea del formulario */
+  background-color: #EFE9F4;
+  color: #171D1C;
+  border-radius: 5px;
+  margin: 10px auto; /* Centramos el textarea y lo separamos de su label*/
+  width: 100%; /* Hacemos que el textarea aparezca debajo del label al darles todo el ancho de la pantalla */
+}
+
+.contenedor-blanco .contenedor-formulario select { /* Le damos estilo a menu de opciones del formulario */
+  background-color: #EFE9F4;
+  color: #171D1C;
+  border-radius: 5px;
+  margin: 10px auto; /* Centramos el menu de opciones y lo separamos un poco de su label*/
+  height: 3.5rem;
+  width: 100%; /* Hacemos que los option aparezcan debajo del label al darles todo el ancho de la pantalla */
+}
+
+
+.contenedor-blanco .contenedor-formulario .boton-formulario {
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #EFE9F4;
+  color: #171D1C;
+  border-radius: 5px;
+  padding: 10px 30px; /* Le damos padding a los botones */
+}
+
+.contenedor-blanco .contenedor-formulario .boton-formulario:hover {
+  border: 3px solid #5863F8; /* Efecto de borde sobre los botones cuando se pasa mouse por encima */
+}
+
+#boton-submit {
+  float: right; /* Hack para que el botón submit quede a la derecha */
+}
+
+/* Contenedor negro del contact */
+
+.contenedor-negro .contenedor-ubicacion {
+  margin: 30px auto; /* Le damos separacion al contenedor del titulo h2 */
+  
+}
+
+.contenedor-negro .contenedor-ubicacion article{
+  display: flex; /* Acá aplicaremos flexbox */
+  justify-content: center; /* Centramos los elementos del flex */
+  gap: 50px; /* Separamos un poco el parrafo del mapa */
+}
+
+.contenedor-negro .contenedor-ubicacion .mapa{
+  border-radius: 5px; /* Le damos borde redondeado al mapa*/
+}
+
+.contenedor-negro .contenedor-ubicacion p {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 30%;
+}
+
+
+/* ------------------------------------- login.html-------------------------------------*/
+
+/* Contenedor blanco del login */
+
+.contenedor-blanco .contenedor-login {
+  background-color: #171D1C;
+  color: #EFE9F4;
+  width: 40%;
+  padding: 50px;
+  margin: 30px auto; /* Centramos el contenedor del login y lo separamos un poco del H2*/
+  font-size: 2rem;
+  border-radius: 5px;
+
+}
+
+.contenedor-blanco .contenedor-login label {
+  display: block;
+  margin: 10px 0; /* Le damos espacio entre cada item del login */
+  
+}
+
+.contenedor-blanco .contenedor-login .input { /* Le damos estilo a los inputs del login */
+  background-color: #EFE9F4;
+  color: #171D1C;
+  border-radius: 5px;
+  width: 100%; /* Hacemos que los inputs aparezcan debajo del label al darles todo el ancho de la pantalla */
+  margin: 10px auto; /* Centramos los inputs y le damos un poco de espacio con los labels */
+  height: 3.5rem; /* Agrandamos los inputs al darles altura*/
+  
+}
+
+.contenedor-blanco .contenedor-login .boton-login {
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #EFE9F4;
+  color: #171D1C;
+  border-radius: 5px;
+  padding: 10px 30px; /* Le damos padding a los botones */
+  margin-top: 10px;
+  
+}
+
+.contenedor-blanco .contenedor-login p {
+  font-size: 2rem;
+}
+
+.contenedor-blanco .contenedor-login p a {
+  text-decoration: none;
+  color: #EFE9F4;
+}
+
+.contenedor-blanco .contenedor-login p a:hover {
+  text-decoration: none;
+  color: #5863F8
+}
+
+.contenedor-blanco .contenedor-login .boton-login:hover {
+  border: 3px solid #5863F8; /* Efecto de borde sobre los botones cuando se pasa mouse por encima */
+}
+
+#boton-signup {
+  float:right; 
+}
+
+
+/* ------------------------------------- Media Queries-------------------------------------*/
+
+
+@media (max-width: 620px) { /* El footer cambiará a column-wrap cuandoo la pantalla se achique */
+  .contenedor-footer .links-footer {
+    flex-flow: column wrap;
+  }
+}
+
+@media (max-width:815px) {
+  .navbar {
+    flex-flow: column nowrap;
+  }
+}
+
+
+@media (max-width:560px) { 
+
+  .contenedor-encabezado nav {
+    text-align: center;
+    width: 250px;
+  }
+}
+
+
+@media (max-width:1020px) { /* Este media query se activa para cambiar a flex el contenedor de ofertas */
+  .contenedor-blanco .ofertas { 
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width:435px) {
+  .contenedor-encabezado h1 {
+    font-size: 3rem;
+  }
+  
+  .contenedor-encabezado p {
+    font-size: 1.5rem;
+  }
+
+  .contenedor-negro section h2 { 
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) { /* Responsive de la sección coaches*/
+
+  .contenedor-negro .coaches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+
+  .contenedor-negro .coaches {
+    grid-template-columns: 1fr;
+  }
+}
