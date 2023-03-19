@@ -32,19 +32,18 @@ Font family: Inter 400 regular y 700 Bold
   background-color: #5863F8;
 }
 
-.contenedor-encabezado .encabezado .container .logo img{
-   /* Centramos el logo en la mitad de la pantalla */
-  width: 220px;
-  height: 140px;
-  
+.contenedor-encabezado .encabezado .container .navbar .container-fluid .navbar-brand .logo{
+  max-width: 300px;
+  max-height: 200px; 
 }
+
+
 
 .nav-link { 
-  color: #EFE9F4 !important;
-  font-size: 2.25rem !important;
+  color: #EFE9F4 !important; /* Hack para cambiar estilo del navbar de bootstrap */
+  font-size: 2.25rem !important; 
   font-weight: 700 !important; 
 }
-
 
 /* Centramos la seccion main de la pagina (donde está nuestro H1) */
 main {
@@ -62,8 +61,7 @@ main {
 }
 
 .contenedor-encabezado p {
-  font-size: 2rem;
-  
+  font-size: 2rem; 
 }
 
 .contenedor-encabezado .button {
@@ -80,7 +78,6 @@ main {
 .contenedor-encabezado .button a {
   text-decoration: none;
   color: #EFE9F4;
-  
 }
 
 .contenedor-encabezado .button a:visited {
@@ -91,7 +88,6 @@ main {
 
 .contenedor-blanco {
   background-color: #EFE9F4;
-   
 }
 
 .contenedor-blanco section {
@@ -110,24 +106,20 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   gap: 0.5rem;
-  
+  margin-top: 50px;
 }
 
 .contenedor-blanco .ofertas article { /*Le damos estilo a la caja de cada oferta */
-  
-  /*margin: 20px; Modificamos la separacion entre las ofertas */
   background: #171D1C;
   text-align: center; /* Centra el texto dentro de la caja */
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: center;
-  min-width: 300px;
+  max-width: 450px;
   min-height: 300px;
   padding: 20px 0 5px 5px;
   border-radius: 5px;
-  margin: 50px 0 15px 15px;
-  
 }
 
 .contenedor-blanco .ofertas div p {
@@ -142,7 +134,6 @@ main {
   width: 80px;
   margin: 40px auto;  
 }
-
 
 .contenedor-blanco .ofertas article h3{
   font-size: 2.5rem; /*Modificamos el font size de los titulos de las ofertas */
@@ -179,7 +170,6 @@ main {
   flex-flow: row wrap;
   justify-content: space-evenly;
   gap: 100px;
-  /* Acá aplicaremos flexbox */
 }
 
 .contenedor-negro .testimonios article{
@@ -195,7 +185,6 @@ main {
 
 .contenedor-negro .testimonios h4 { /*Le damos estilo al titulo h4 de cada testimonio */
   text-decoration: underline;
-  
 }
 
 .contenedor-negro .testimonios p { /*Le damos estilo al párrafo de cada testimonio*/
@@ -218,8 +207,7 @@ main {
 
 .contenedor-footer .links-footer {
   text-align: center; /* Centramos todo lo que está en el contenedor footer */
-  padding: 50px 0px; /* Le damos separacion a los elementos del footer */
-  /* En esta sección se aplicará flexbox más adelante  */
+  padding: 50px 0px; 
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -230,13 +218,10 @@ main {
   list-style: none;
 }
 
-#logo-footer img {
-  margin: 0 auto; /* Centramos el logo en la mitad de la pantalla */
-  height: 195px;
+#logo-footer img{ /* Centramos el logo en la mitad de la pantalla */
+  height: 250px;
   width: 300px;
 }
-
-
 
 /* ------------------------------------- about-us.html-------------------------------------*/
 
@@ -251,7 +236,6 @@ main {
   gap: 1rem;
   flex-flow: row wrap;
 }
-
 
 .contenedor-blanco .about img{
   width: 100%;
@@ -272,12 +256,9 @@ main {
   max-width: 700px;
    /* Movemos el párrafo a la derecha de la imagen */
   text-align: left;
-  
-  
 }
 
 /* Contenedor negro del About Us */
-
 
 .contenedor-negro .coaches{
   margin-top: 30px;
@@ -292,9 +273,7 @@ main {
   padding: 20px;
 }
 
-
 /* ------------------------------------- pricing.html-------------------------------------*/
-
 
 .contenedor-blanco .productos{
   text-align: center; /* Centra todo el texto dentro del contenedor*/
@@ -302,19 +281,19 @@ main {
   justify-content: space-evenly;
   flex-flow: row wrap;
   gap: 0.5rem;
+  margin-top: 50px;
 }
 
 .contenedor-blanco .productos article{
   background-color: #171D1C;
   color: #EFE9F4;
-  margin-top: 50px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-content: center;
   gap: 40px;
-  width: 380px;
-  height: 474px;
+  width: 400px;
+  min-height: 480px;
   border-radius: 5px;
   padding: 30px 20px;
   box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
