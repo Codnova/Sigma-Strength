@@ -55,13 +55,21 @@
   <div class="contenedor-blanco">
     <section id="login"> <!-- Sección del formulario de login-->
       <h2>LOGIN OR SIGNUP</h2>
-      <div class="contenedor-login"> <!-- Contenedor del login-->
-        <form method="get" action="" class="formulario-login">
-          <label for="email">Enter your Email <input id="email" name="email" type="email" class="input" required placeholder="example@gmail.com"></label>
-          <label for="password">Enter your Password <input id="password" name="password" type="password" class="input" required placeholder="Enter Password"></label>
-          <p><a href="#">Forgot your Password?</a></p>
-          <input type="submit" value="Login" class="boton-login" id="boton-login">
-          <input type="submit" value="Signup" class="boton-login" id="boton-signup">
+      <div class="container-sm">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Enter your Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword5" class="form-label">Password</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+          </div>
+          <div class="mb-3">
+            <label class="form-label"><a href="#">Reset Password</a></label>
+          </div>
+          <button type="reset" class="btn btn-lg btn-primary">Reset</button>
+          <button type="submit" class="btn btn-lg btn-primary">Submit</button>
         </form>
       </div>
     </section>

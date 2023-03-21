@@ -1,0 +1,142 @@
+      <div class="contenedor-formulario"> <!-- Contenedor del formulario-->
+        <form method="get" action="" class="formulario">
+          <label for="full-name">Full Name <input id="full-name" name="full-name" type="text" class="input" required></label>
+          <label for="email">Your Email <input id="email" name="email" type="email" class="input" required></label>
+          <label for="what-need"> What do you need?
+            <select name="what-need" id="what-need">
+              <option value="0">Select an option...</option>
+              <option value="1">Strength Training</option>
+              <option value="2">Hypertrophy Training</option>
+              <option value="3">Conditioning</option>
+              <option value="4">Nutrition</option>
+              <option value="5">Other Reason</option>
+            </select>
+          </label>
+          <label for="message">Message <textarea name="message" id="message" cols="60" rows="6"></textarea></label>
+          <input type="reset" class="boton-formulario" id="boton-reset">
+          <input type="submit" value="Submit" class="boton-formulario" id="boton-submit">
+        </form>
+      </div>
+
+
+      .contenedor-blanco .contenedor-formulario{ /* Le damos estilo al contenedor del formulario */
+        background-color: #171D1C;
+        color: #EFE9F4;
+        max-width: 50%;
+        padding: 30px;
+        margin: 50px auto; /* Centramos el contenedor del formulario y lo separamos un poco del H2*/
+        font-size: 2rem; /* Le damos tamaño de fuente a todos los elementos en el form*/
+        border-radius: 5px;
+      }
+      
+      .contenedor-blanco .contenedor-formulario .formulario { 
+        display: grid;
+        grid-template-columns: 1fr;
+      } 
+      
+      .contenedor-blanco .contenedor-formulario label {
+        display: block;
+        margin: 10px 0; /* Le damos espacio entre cada item del formulario */
+        
+      }
+      
+      .contenedor-blanco .contenedor-formulario .input { /* Le damos estilo a los inputs del formulario */
+        background-color: #EFE9F4;
+        color: #171D1C;
+        border-radius: 5px;
+        width: 100%; /* Hacemos que los inputs aparezcan debajo del label al darles todo el ancho de la pantalla */
+        margin: 10px auto; /* Centramos los inputs y le damos un poco de espacio con los labels */
+        height: 3.5rem; /* Agrandamos los inputs al darles altura*/
+        
+      }
+      
+      .contenedor-blanco .contenedor-formulario .formulario textarea{ /* Le damos estilo al textarea del formulario */
+        background-color: #EFE9F4;
+        color: #171D1C;
+        border-radius: 5px;
+        margin: 10px auto; /* Centramos el textarea y lo separamos de su label*/
+        width: 100%; /* Hacemos que el textarea aparezca debajo del label al darles todo el ancho de la pantalla */
+      }
+      
+      .contenedor-blanco .contenedor-formulario select { /* Le damos estilo a menu de opciones del formulario */
+        background-color: #EFE9F4;
+        color: #171D1C;
+        border-radius: 5px;
+        margin: 10px auto; /* Centramos el menu de opciones y lo separamos un poco de su label*/
+        height: 3.5rem;
+        width: 100%; /* Hacemos que los option aparezcan debajo del label al darles todo el ancho de la pantalla */
+      }
+      
+      
+      .contenedor-blanco .contenedor-formulario .boton-formulario {
+        font-size: 2rem;
+        font-weight: 700;
+        background-color: #EFE9F4;
+        color: #171D1C;
+        border-radius: 5px;
+        padding: 10px 30px; /* Le damos padding a los botones */
+      }
+      
+      .contenedor-blanco .contenedor-formulario .boton-formulario:hover {
+        border: 3px solid #5863F8; /* Efecto de borde sobre los botones cuando se pasa mouse por encima */
+      }
+      
+      #boton-submit {
+        float: right; /* Hack para que el botón submit quede a la derecha */
+      }
+
+----------------------------------------------------
+
+.contenedor-encabezado .encabezado {
+   /* Centramos todos los elementos en el encabezado */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contenedor-encabezado .encabezado .logo img{
+  margin: 0 auto; /* Centramos el logo en la mitad de la pantalla */
+  max-height: 195px;
+  max-width: 300px;
+
+}
+
+.navbar {
+  margin-top: 50px; /*Separamos un poco el navbar del logo  */
+  background-color: #EFE9F4;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+
+
+/* Damos estilo a los elementos del menu de navegación*/
+.navbar li{
+  font-size: 2.25rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 10px; /* Le damos separación a los elementos del navbar */
+  
+}
+
+/* Resaltamos el primer item del menu de navegacion*/
+.navbar li:first-of-type{
+  background-color: #171D1C;
+  border-radius: 5px;
+  
+}
+
+.navbar li:first-of-type a{
+  color: #EFE9F4;
+  
+}
+
+/* Damos estilo a los links en el navbar */
+.navbar a {
+  text-decoration: none;
+  color: #171D1C;
+}
+
