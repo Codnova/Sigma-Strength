@@ -24,8 +24,7 @@ Font family: Inter 400 regular y 700 Bold
 
 .contenedor-encabezado {
   background: #5863F8;
-  padding: 10px 50px; /* Padding de todo lo que está en el contenedor encabezado*/
-  
+  padding: 10px 50px; /* Padding de todo lo que está en el contenedor encabezado*/ 
 }
 
 .contenedor-encabezado .encabezado .container .navbar .container-fluid {
@@ -33,8 +32,9 @@ Font family: Inter 400 regular y 700 Bold
 }
 
 .contenedor-encabezado .encabezado .container .navbar .container-fluid .navbar-brand .logo{
+  width: 100%;
   max-width: 300px;
-  max-height: 200px; 
+  height: auto;
 }
 
 .nav-link { 
