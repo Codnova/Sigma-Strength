@@ -16,8 +16,6 @@ Font family: Inter 400 regular y 700 Bold
 
 */
 
-/* La pagina esá dividia en contenedores de 3 colores: azul (header y footer), blanco (donde va el contenido principal) y negro. Asi puedo reutilizarlos en todas las paginas. */
-
 /* ------------------------------------- index.html-------------------------------------*/
 
 /* -----Sección Header----- */
@@ -31,7 +29,7 @@ Font family: Inter 400 regular y 700 Bold
   background-color: #5863F8;
 }
 
-.logo{
+.logo {
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -44,6 +42,7 @@ Font family: Inter 400 regular y 700 Bold
 }
 
 /* Centramos la seccion main de la pagina (donde está nuestro H1) */
+
 main {
   text-align: center;
   margin: 50px auto;
@@ -213,8 +212,6 @@ main {
 .contenedor-footer .links-footer li{ /* Eliminamos los bullets de la lista*/
   list-style: none;
 }
-
-
 
 /* ------------------------------------- about-us.html-------------------------------------*/
 
