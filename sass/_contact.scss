@@ -1,0 +1,46 @@
+/* ------------------------------------- contact.html-------------------------------------*/
+
+/* Contenedor blanco del contact */
+
+.contenedor-blanco .container-sm {
+  background-color: $eerieblack !important;
+  border-radius: 5px;
+  padding: 30px;
+  font-size: 2rem;
+  margin-top: 50px;
+  label {
+    color: $magnoliawhite;
+  }
+  input, select, textarea {
+    background-color: $magnoliawhite;
+  }
+  button {
+    background-color: $neonblue;
+    color: $magnoliawhite;
+  }
+}
+
+/* Contenedor negro del contact */
+
+.contenedor-negro .contenedor-ubicacion {
+  margin: 50px auto; /* Le damos separacion al contenedor del titulo h2 */ 
+  article {
+    display: flex; /* Acá aplicaremos flexbox */
+    justify-content: center; /* Centramos los elementos del flex */
+    align-items: center;
+    gap: 50px; /* Separamos un poco el parrafo del mapa */
+  }
+  .contenedor-mapa{
+    width: 35%;
+  } 
+  .mapa {
+    border-radius: 5px; /* Le damos borde redondeado al mapa*/
+    width: 100%;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 600px;
+    text-align: left;
+  }
+}

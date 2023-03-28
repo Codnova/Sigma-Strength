@@ -1,0 +1,22 @@
+/* -----Sección Footer----- */
+
+.contenedor-footer {
+  background-color: #5863F8;
+  a { /* Le damos estilo a los links en el footer */
+    color: #EFE9F4;
+    text-decoration: none;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  .links-footer {
+    text-align: center; /* Centramos todo lo que está en el contenedor footer */
+    padding: 50px 0px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    li { /* Eliminamos los bullets de la lista*/
+      list-style: none;
+    }
+  }
+}

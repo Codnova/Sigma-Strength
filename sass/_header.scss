@@ -1,0 +1,22 @@
+/* Header del sitio web*/
+
+.contenedor-encabezado {
+  background: $neonblue;
+  padding: 10px 50px; /* Padding de todo lo que está en el contenedor encabezado*/ 
+  
+  .encabezado .container .navbar .container-fluid {
+    background-color: $neonblue;
+  }
+}
+
+.logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.nav-link { 
+  color: $magnoliawhite !important; /* Hack para cambiar estilo del navbar de bootstrap */
+  font-size: 2.5rem !important; 
+  font-weight: 700 !important; 
+}

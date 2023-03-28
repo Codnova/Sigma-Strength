@@ -1,0 +1,86 @@
+/* 
+Paleta de colores 
+Magnolia white: #EFE9F4
+Eerie black: #171D1C
+Neon blue: #5863F8
+Font family: Inter 400 regular y 700 Bold
+*/
+
+@import "cssReset";
+@import "header";
+@import "index";
+@import "about-us";
+@import "pricing";
+@import "contact";
+@import "login";
+@import "footer";
+
+/* ------------------------------------- Variables -------------------------------------*/
+
+$magnoliawhite: #EFE9F4;
+$eerieblack: #171D1C;
+$neonblue: #5863F8;
+
+/* ------------------------------------- Media Queries-------------------------------------*/
+
+@media (max-width: 620px) { /* El footer cambiará a column-wrap cuandoo la pantalla se achique */
+  
+  .contenedor-footer .links-footer {
+    flex-flow: column wrap;
+  }
+}
+
+@media (max-width:1020px) { /* Este media query se activa para cambiar a flex el contenedor de ofertas */
+  
+  .contenedor-blanco .ofertas { 
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width:435px) {
+  
+  .contenedor-encabezado h1 {
+    font-size: 3rem;
+  }
+  
+  .contenedor-encabezado p {
+    font-size: 1.5rem;
+  }
+
+  .contenedor-negro section h2 { 
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) { /* Responsive de la sección coaches*/
+  
+  .contenedor-negro .coaches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  
+  .contenedor-negro .coaches {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:1080px) { /* Responsive del mapa de About us.html */
+  
+  .contenedor-negro .contenedor-ubicacion article{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor-negro .contenedor-ubicacion .contenedor-mapa {
+    width: 100%;
+  } 
+
+}

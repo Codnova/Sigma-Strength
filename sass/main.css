@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/* 
+Paleta de colores 
+Magnolia white: #EFE9F4
+Eerie black: #171D1C
+Neon blue: #5863F8
+Font family: Inter 400 regular y 700 Bold
+*/
+/*CSS Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header del sitio web*/
+.contenedor-encabezado {
+  background: #5863F8;
+  padding: 10px 50px; /* Padding de todo lo que está en el contenedor encabezado*/
+}
+.contenedor-encabezado .encabezado .container .navbar .container-fluid {
+  background-color: #5863F8;
+}
+
+.logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.nav-link {
+  color: #EFE9F4 !important; /* Hack para cambiar estilo del navbar de bootstrap */
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+}
+
+/* ------------------------------------- index.html-------------------------------------*/
+.contenedor-encabezado main {
+  color: #EFE9F4;
+  text-align: center;
+  margin: 50px auto;
+}
+.contenedor-encabezado main h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.contenedor-encabezado main p {
+  font-size: 2rem;
+}
+.contenedor-encabezado main .button {
+  font-size: 2rem;
+  background-color: #171D1C;
+  color: #EFE9F4;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+}
+.contenedor-encabezado main .button a {
+  text-decoration: none;
+  color: #EFE9F4;
+}
+.contenedor-encabezado main .button a a:visited {
+  color: #EFE9F4;
+}
+
+/* -----Sección Contenedor Blanco Ofertas----- */
+.contenedor-blanco {
+  background-color: #EFE9F4;
+}
+.contenedor-blanco section {
+  padding: 50px; /* Padding de la seccion oferta*/
+}
+.contenedor-blanco section h2 { /*Le damos estilo al titulo de la seccion ofertas */
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.contenedor-blanco .ofertas { /*Le damos estilo al contenedor ofertas */
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 0.5rem;
+  margin-top: 50px;
+}
+.contenedor-blanco .ofertas article { /*Le damos estilo a la caja de cada oferta */
+  background: #171D1C;
+  text-align: center; /* Centra el texto dentro de la caja */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  min-height: 300px;
+  padding: 20px 0 5px 5px;
+  border-radius: 5px;
+}
+.contenedor-blanco .ofertas article img { /*Le damos estilo a la caja de cada oferta */
+  height: 80px;
+  width: 80px;
+  margin: 40px auto;
+}
+.contenedor-blanco .ofertas article h3 {
+  font-size: 2.5rem; /*Modificamos el font size de los titulos de las ofertas */
+  color: #EFE9F4;
+}
+.contenedor-blanco .ofertas div p {
+  color: #EFE9F4;
+  padding: 1rem;
+  font-size: 1.25rem; /* Tamaño de fuente de los parrafos en las ofertas */
+  max-width: 350px;
+}
+
+/* -----Sección Testimonio----- */
+.contenedor-negro {
+  background-color: #171D1C;
+  color: #EFE9F4;
+  text-align: center;
+}
+.contenedor-negro section {
+  padding: 50px;
+}
+.contenedor-negro section h2 { /*Le damos estilo al titulo de la seccion testimonios */
+  font-size: 3rem;
+  font-weight: 700;
+}
+.contenedor-negro .testimonios {
+  margin-top: 50px;
+  font-size: 1.25rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+.contenedor-negro .testimonios article {
+  max-width: 300px;
+}
+.contenedor-negro .testimonios img {
+  width: 195px;
+  height: 195px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.contenedor-negro .testimonios h4 { /*Le damos estilo al titulo h4 de cada testimonio */
+  text-decoration: underline;
+  margin-top: 30px;
+}
+.contenedor-negro .testimonios p { /*Le damos estilo al párrafo de cada testimonio*/
+  margin-top: 30px;
+}
+
+/* ------------------------------------- about-us.html-------------------------------------*/
+/* Contenedor blanco del About Us */
+.contenedor-blanco .about {
+  margin-top: 50px; /* Separamos el contenido de about us del titulo del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-flow: row wrap;
+}
+
+.contenedor-blanco .about img {
+  width: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+}
+
+.contenedor-blanco .about .imagen {
+  width: 75vw;
+  max-width: 700px;
+  min-width: 330px;
+}
+
+.contenedor-blanco .about p {
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 700px;
+  text-align: left;
+}
+
+/* Contenedor negro del About Us */
+.contenedor-negro .coaches {
+  margin-top: 30px;
+  display: grid;
+  text-align: center; /* Centramos todos los elementos en el contenedor coaches */
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.contenedor-negro .coaches article { /* Le damos estilo a cada coach */
+  font-size: 2.25rem;
+  padding: 20px;
+}
+
+.contenedor-negro .coaches article .nombre-coach { /* Le damos estilo a cada coach */
+  font-size: 2rem;
+}
+
+/* ------------------------------------- pricing.html-------------------------------------*/
+.contenedor-blanco .productos {
+  text-align: center; /* Centra todo el texto dentro del contenedor*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  margin-top: 50px;
+}
+
+.contenedor-blanco .productos article {
+  background-color: #171D1C;
+  color: #EFE9F4;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+  width: 400px;
+  min-height: 480px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+}
+
+.contenedor-blanco .productos h3, .precio {
+  font-size: 2.25rem;
+}
+
+.contenedor-blanco .productos p {
+  font-size: 1.5rem;
+}
+
+/* ------------------------------------- contact.html-------------------------------------*/
+/* Contenedor blanco del contact */
+.contenedor-blanco .container-sm {
+  background-color: #171D1C !important;
+  border-radius: 5px;
+  padding: 30px;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.contenedor-blanco .container-sm label {
+  color: #EFE9F4;
+}
+
+.contenedor-blanco .container-sm input, .contenedor-blanco .container-sm select, .contenedor-blanco .container-sm textarea {
+  background-color: #EFE9F4;
+}
+
+.contenedor-blanco .container-sm button {
+  background-color: #5863F8;
+  color: #EFE9F4;
+}
+
+/* Contenedor negro del contact */
+.contenedor-negro .contenedor-ubicacion {
+  margin: 50px auto; /* Le damos separacion al contenedor del titulo h2 */
+}
+
+.contenedor-negro .contenedor-ubicacion article {
+  display: flex; /* Acá aplicaremos flexbox */
+  justify-content: center; /* Centramos los elementos del flex */
+  align-items: center;
+  gap: 50px; /* Separamos un poco el parrafo del mapa */
+}
+
+.contenedor-negro .contenedor-ubicacion .mapa {
+  border-radius: 5px; /* Le damos borde redondeado al mapa*/
+  width: 100%;
+}
+
+.contenedor-negro .contenedor-ubicacion .contenedor-mapa {
+  width: 35%;
+}
+
+.contenedor-negro .contenedor-ubicacion p {
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* ------------------------------------- login.html-------------------------------------*/
+/* Contenedor blanco del login */
+.contenedor-blanco .container-sm form a {
+  text-decoration: none;
+  color: #5863F8;
+  font-size: 1.5rem;
+}
+
+/* -----Sección Footer----- */
+.contenedor-footer {
+  background-color: #5863F8;
+}
+.contenedor-footer a { /* Le damos estilo a los links en el footer */
+  color: #EFE9F4;
+  text-decoration: none;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.contenedor-footer .links-footer {
+  text-align: center; /* Centramos todo lo que está en el contenedor footer */
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.contenedor-footer .links-footer li { /* Eliminamos los bullets de la lista*/
+  list-style: none;
+}
+
+/* ------------------------------------- Variables -------------------------------------*/
+/* ------------------------------------- Media Queries-------------------------------------*/
+@media (max-width: 620px) { /* El footer cambiará a column-wrap cuandoo la pantalla se achique */
+  .contenedor-footer .links-footer {
+    flex-flow: column wrap;
+  }
+}
+@media (max-width: 1020px) { /* Este media query se activa para cambiar a flex el contenedor de ofertas */
+  .contenedor-blanco .ofertas {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 435px) {
+  .contenedor-encabezado h1 {
+    font-size: 3rem;
+  }
+  .contenedor-encabezado p {
+    font-size: 1.5rem;
+  }
+  .contenedor-negro section h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1000px) { /* Responsive de la sección coaches*/
+  .contenedor-negro .coaches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .contenedor-negro .coaches {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1080px) { /* Responsive del mapa de About us.html */
+  .contenedor-negro .contenedor-ubicacion article {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-negro .contenedor-ubicacion .contenedor-mapa {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
