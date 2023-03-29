@@ -6,6 +6,12 @@ Neon blue: #5863F8
 Font family: Inter 400 regular y 700 Bold
 */
 
+/* ------------------------------------- Variables -------------------------------------*/
+
+$magnoliawhite: #EFE9F4;
+$eerieblack: #171D1C;
+$neonblue: #5863F8;
+
 @import "cssReset";
 @import "header";
 @import "index";
@@ -15,15 +21,18 @@ Font family: Inter 400 regular y 700 Bold
 @import "login";
 @import "footer";
 
-/* ------------------------------------- Variables -------------------------------------*/
-
-$magnoliawhite: #EFE9F4;
-$eerieblack: #171D1C;
-$neonblue: #5863F8;
-
 /* ------------------------------------- Media Queries-------------------------------------*/
 
-@media (max-width: 620px) { /* El footer cambiará a column-wrap cuandoo la pantalla se achique */
+@media (max-width: 520px) { /* El logo del header se achica para darle espacio al toggler de boostrap */
+  
+  .logo.top{
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+  }
+}
+
+@media (max-width: 620px) { /* El footer cambiará a column-wrap cuando la pantalla se achique */
   
   .contenedor-footer .links-footer {
     flex-flow: column wrap;
@@ -82,5 +91,4 @@ $neonblue: #5863F8;
   .contenedor-negro .contenedor-ubicacion .contenedor-mapa {
     width: 100%;
   } 
-
 }
