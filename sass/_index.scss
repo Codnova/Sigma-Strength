@@ -20,10 +20,13 @@
     font-weight: 700;
     margin-top: 20px;
     border: none;
+    &:hover {
+      box-shadow: 0 0 50px $eerieblack;
+    }
     a {
       text-decoration: none;
       color: $magnoliawhite;
-      a:visited {
+      &:visited {
         color: $magnoliawhite;
       }
     }
@@ -60,6 +63,36 @@
       min-height: 300px;
       padding: 20px 0 5px 5px;
       border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        box-shadow: 0 0 50px $eerieblack;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 450px;
+        height: 100%;
+        background-color: $neonblue;
+        animation: bordeAnimado 4s linear infinite;
+        z-index: -1;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 5px;
+        background-color: $eerieblack;
+        z-index: -1;
+      }
+      @keyframes bordeAnimado {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
       img { /*Le damos estilo a la caja de cada oferta */
         height: 80px;
         width: 80px;
