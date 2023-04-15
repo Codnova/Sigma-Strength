@@ -25,7 +25,7 @@
 .contenedor-negro .contenedor-ubicacion {
   margin: 50px auto; /* Le damos separacion al contenedor del titulo h2 */ 
   article {
-    display: flex; /* Acá aplicaremos flexbox */
+    display: flex;
     justify-content: center; /* Centramos los elementos del flex */
     align-items: center;
     gap: 50px; /* Separamos un poco el parrafo del mapa */
